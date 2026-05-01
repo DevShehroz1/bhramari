@@ -172,13 +172,206 @@
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
       }
     },
+    "shipping_tFAiVG": {
+      "type": "shipping",
+      "blocks": {
+        "shipping_rUUHYi": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "car",
+            "image_icon": "shopify://shop_images/best-seller.png",
+            "icon": "las la-shipping-fast",
+            "title": "100% PREMIUM QUALITY",
+            "text": "",
+            "html": ""
+          }
+        },
+        "shipping_XpXgF8": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "help",
+            "image_icon": "shopify://shop_images/jewelry.png",
+            "icon": "las la-life-ring",
+            "title": "HAND CRAFTED",
+            "text": "",
+            "html": ""
+          }
+        },
+        "shipping_QcpkmR": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "refesh",
+            "image_icon": "shopify://shop_images/free-delivery.png",
+            "icon": "las la-undo-alt",
+            "title": "FREE SHIPPING NATIONWIDE",
+            "text": "",
+            "html": ""
+          }
+        },
+        "shipping_J8iixq": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "door-lock",
+            "image_icon": "shopify://shop_images/cod.png",
+            "icon": "las la-lock",
+            "title": "CASH ON DELVIERY",
+            "text": "",
+            "html": ""
+          }
+        }
+      },
+      "block_order": [
+        "shipping_rUUHYi",
+        "shipping_XpXgF8",
+        "shipping_QcpkmR",
+        "shipping_J8iixq"
+      ],
+      "name": "Shipping",
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "content_align": "text-center",
+        "align_vertical": false,
+        "design_padding": "1",
+        "source": "get_image",
+        "icon_des": "default",
+        "icon_size": "medium",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "1",
+        "border": false,
+        "cl_bd": "#ddd",
+        "cl_ic": "#9e9e9e",
+        "cl_hd": "#222222",
+        "cl_cot": "#878787",
+        "bg_item": "#ffeed8",
+        "hd_fs": 14,
+        "hd_fw": 500,
+        "txt_fs": 13,
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "carousel_mobile": true,
+        "dots_cl": "primary",
+        "dots_round": true,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#f4e9d9",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "0PX,,20PX,",
+        "mg_tb": ",,50px,",
+        "pd_tb": "",
+        "mg_mb": "-10px",
+        "pd_mb": "10px,0,",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "164603504020ce33da": {
+      "type": "collections-list-manual",
+      "blocks": {
+        "1646035040fee424aa-0": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "bangles-amp-bracelet",
+            "image": "shopify://shop_images/IMG_4587.png",
+            "collection_title": "BANGLES",
+            "collection_link": ""
+          }
+        },
+        "1646035040fee424aa-1": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "earrings",
+            "image": "shopify://shop_images/IMG_4583.png",
+            "collection_title": "EARRINGS",
+            "collection_link": ""
+          }
+        },
+        "1646035040fee424aa-2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "necklaces-necklaces",
+            "image": "shopify://shop_images/IMG_4456.jpg",
+            "collection_title": "NECKLACES",
+            "collection_link": ""
+          }
+        },
+        "fb81d2b5-38b4-4322-93fc-cd722f8758f3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "necklaces-choker",
+            "image": "shopify://shop_images/IMG_4584.png",
+            "collection_title": "CHOKAR",
+            "collection_link": ""
+          }
+        },
+        "collection_item_DbVMtb": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "hand-pieces-clutch",
+            "image": "shopify://shop_images/IMG_4588.png",
+            "collection_title": "CLUTCH",
+            "collection_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1646035040fee424aa-0",
+        "1646035040fee424aa-1",
+        "1646035040fee424aa-2",
+        "fb81d2b5-38b4-4322-93fc-cd722f8758f3",
+        "collection_item_DbVMtb"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "SHOP BY CATEGORY",
+        "icon_heading": "gem",
+        "top_subheading": "",
+        "tophead_mb": 28,
+        "collection_des": "13",
+        "title_cl": "#222222",
+        "title_cl_hover": "#222222",
+        "subtitle_cl": "#878787",
+        "count_cl": "#222222",
+        "border_cl": "#e5e5e5",
+        "collection_subtitle": "",
+        "open_link": "_self",
+        "space_bottom": 2,
+        "space_bottom_mb": 6,
+        "border": false,
+        "item_rd": 0,
+        "item_rd_unit": "%",
+        "img_effect": "zoom",
+        "b_effect": "border-run",
+        "image_position": "7",
+        "coll_layout": "4",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "0px,30px,40px,30px",
+        "pd": "0",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,50px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
     "top_heading_qnHqJM": {
       "type": "top_heading",
       "blocks": {
         "bl_heading_UMhBtb": {
           "type": "bl_heading",
           "settings": {
-            "top_heading": "WELCOME TO THE WORLD OF AK JEWELS"
+            "top_heading": "WELCOME TO THE WORLD OF BHRAMARI"
           }
         }
       },
@@ -415,99 +608,6 @@
         "mg_tb": "",
         "pd_tb": "",
         "mg_mb": ",,25px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
-      }
-    },
-    "164603504020ce33da": {
-      "type": "collections-list-manual",
-      "blocks": {
-        "1646035040fee424aa-0": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "bangles-amp-bracelet",
-            "image": "shopify://shop_images/IMG_4587.png",
-            "collection_title": "BANGLES",
-            "collection_link": ""
-          }
-        },
-        "1646035040fee424aa-1": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "earrings",
-            "image": "shopify://shop_images/IMG_4583.png",
-            "collection_title": "EARRINGS",
-            "collection_link": ""
-          }
-        },
-        "1646035040fee424aa-2": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "necklaces-necklaces",
-            "image": "shopify://shop_images/IMG_4456.jpg",
-            "collection_title": "NECKLACES",
-            "collection_link": ""
-          }
-        },
-        "fb81d2b5-38b4-4322-93fc-cd722f8758f3": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "necklaces-choker",
-            "image": "shopify://shop_images/IMG_4584.png",
-            "collection_title": "CHOKAR",
-            "collection_link": ""
-          }
-        },
-        "collection_item_DbVMtb": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "hand-pieces-clutch",
-            "image": "shopify://shop_images/IMG_4588.png",
-            "collection_title": "CLUTCH",
-            "collection_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1646035040fee424aa-0",
-        "1646035040fee424aa-1",
-        "1646035040fee424aa-2",
-        "fb81d2b5-38b4-4322-93fc-cd722f8758f3",
-        "collection_item_DbVMtb"
-      ],
-      "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "FEATURED CATEGORIES",
-        "icon_heading": "gem",
-        "top_subheading": "",
-        "tophead_mb": 28,
-        "collection_des": "13",
-        "title_cl": "#222222",
-        "title_cl_hover": "#222222",
-        "subtitle_cl": "#878787",
-        "count_cl": "#222222",
-        "border_cl": "#e5e5e5",
-        "collection_subtitle": "",
-        "open_link": "_self",
-        "space_bottom": 2,
-        "space_bottom_mb": 6,
-        "border": false,
-        "item_rd": 0,
-        "item_rd_unit": "%",
-        "img_effect": "zoom",
-        "b_effect": "border-run",
-        "image_position": "7",
-        "coll_layout": "4",
-        "layout": "t4s-container-fluid",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": "0",
-        "pd": "0",
-        "mg_tb": "",
-        "pd_tb": "",
-        "mg_mb": ",,50px,",
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
@@ -1361,11 +1461,12 @@
   },
   "order": [
     "1646028739ae283905",
+    "shipping_tFAiVG",
+    "164603504020ce33da",
     "top_heading_qnHqJM",
     "featured_collection_KLkYJe",
     "featured_collection_pkxrqR",
     "164603686708691778",
-    "164603504020ce33da",
     "tabs_collection_XNQrAg",
     "tabs_collection_iQMgDg",
     "top_heading_9PdpmU",
