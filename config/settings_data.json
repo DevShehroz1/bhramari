@@ -426,7 +426,7 @@
             "type": "announcement",
             "settings": {
               "link": "",
-              "content": "<p>SHIPPING WORLDWIDE</p>",
+              "content": "<p>Free Pan-India Shipping</p>",
               "adding_border": false,
               "countdown": "2023/12/26",
               "txt_day": "days",
@@ -437,18 +437,7 @@
             "type": "announcement",
             "settings": {
               "link": "",
-              "content": "<p>INTERNATIONAL ORDERS SHOULD BE OF MINIMUM 72$ EXCLUDING DELIVERY</p>",
-              "adding_border": false,
-              "countdown": "2023/12/26",
-              "txt_day": "days",
-              "dayx": 0
-            }
-          },
-          "announcement-bar-2": {
-            "type": "announcement",
-            "settings": {
-              "link": "",
-              "content": "<p>ORNAMENTS, A BEAUTY REQUIRE</p>",
+              "content": "<p> Extra 5% Off on Prepaid Orders</p>",
               "adding_border": false,
               "countdown": "2023/12/26",
               "txt_day": "days",
@@ -458,17 +447,16 @@
         },
         "block_order": [
           "announcement-bar-0",
-          "announcement-bar-1",
-          "announcement-bar-2"
+          "announcement-bar-1"
         ],
         "settings": {
-          "show_announcement": false,
+          "show_announcement": true,
           "effect": "1",
           "au_time": 3.5,
           "height": 45,
           "fontsize": 12,
           "cl": "#ffffff",
-          "bg": "#222222",
+          "bg": "#c4b282",
           "bg_op": 100,
           "close": "0",
           "cl_btn": "#ffffff",
