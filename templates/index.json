@@ -411,12 +411,12 @@
         "head_btn_cl": "dark",
         "head_btn_effect": "fade",
         "head_btn_hidden_mb": false,
-        "collection": "timeless-treasures",
+        "collection": "work-wear",
         "product_des": "1",
         "show_vendor": false,
         "use_cdt": false,
-        "image_ratio": "ratio1_1",
-        "image_size": "contain",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
         "image_position": "8",
         "content_align": "default",
         "limit": 8,
@@ -448,10 +448,10 @@
         "dots_hidden_mobile": false,
         "use_pagination": "view-all",
         "enable_bar_lm": true,
-        "btn_icon": false,
+        "btn_icon": true,
         "button_style": "default",
-        "btns_size": "medium",
-        "btns_cl": "default",
+        "btns_size": "extra-medium",
+        "btns_cl": "primary",
         "button_effect": "fade",
         "btn_pos": "t4s-text-center",
         "layout": "t4s-container-wrap",
@@ -467,12 +467,12 @@
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
       }
     },
-    "featured_collection_pkxrqR": {
+    "featured_collection_6EpTde": {
       "type": "featured-collection",
       "settings": {
         "design_heading": "2",
         "heading_align": "t4s-text-center",
-        "top_heading": "BRIDAL COLLECTION",
+        "top_heading": "BEST SELLERS",
         "icon_heading": "gem",
         "top_subheading": "",
         "tophead_mb": 28,
@@ -484,12 +484,12 @@
         "head_btn_cl": "dark",
         "head_btn_effect": "fade",
         "head_btn_hidden_mb": false,
-        "collection": "bridal",
+        "collection": "dazzling-drops-and-danglers",
         "product_des": "1",
         "show_vendor": false,
         "use_cdt": false,
-        "image_ratio": "ratio1_1",
-        "image_size": "contain",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
         "image_position": "8",
         "content_align": "default",
         "limit": 8,
@@ -521,10 +521,10 @@
         "dots_hidden_mobile": false,
         "use_pagination": "view-all",
         "enable_bar_lm": true,
-        "btn_icon": false,
+        "btn_icon": true,
         "button_style": "default",
-        "btns_size": "medium",
-        "btns_cl": "default",
+        "btns_size": "extra-medium",
+        "btns_cl": "primary",
         "button_effect": "fade",
         "btn_pos": "t4s-text-center",
         "layout": "t4s-container-wrap",
@@ -540,12 +540,12 @@
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
       }
     },
-    "164603686708691778": {
+    "featured_collection_wqhJFe": {
       "type": "featured-collection",
       "settings": {
         "design_heading": "2",
         "heading_align": "t4s-text-center",
-        "top_heading": "FEATURED COLLECTION",
+        "top_heading": "BEST SELLERS",
         "icon_heading": "gem",
         "top_subheading": "",
         "tophead_mb": 28,
@@ -557,12 +557,12 @@
         "head_btn_cl": "dark",
         "head_btn_effect": "fade",
         "head_btn_hidden_mb": false,
-        "collection": "new",
+        "collection": "dazzling-drops-and-danglers",
         "product_des": "1",
         "show_vendor": false,
         "use_cdt": false,
-        "image_ratio": "ratio1_1",
-        "image_size": "contain",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
         "image_position": "8",
         "content_align": "default",
         "limit": 8,
@@ -594,10 +594,10 @@
         "dots_hidden_mobile": false,
         "use_pagination": "view-all",
         "enable_bar_lm": true,
-        "btn_icon": false,
+        "btn_icon": true,
         "button_style": "default",
-        "btns_size": "medium",
-        "btns_cl": "default",
+        "btns_size": "extra-medium",
+        "btns_cl": "primary",
         "button_effect": "fade",
         "btn_pos": "t4s-text-center",
         "layout": "t4s-container-wrap",
@@ -908,6 +908,7 @@
         "bl_heading_XKQHea",
         "bl_subheading_aWAyeQ"
       ],
+      "disabled": true,
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-center",
@@ -1030,6 +1031,7 @@
         "tab_item_fCGr4D",
         "tab_item_aGE8mV"
       ],
+      "disabled": true,
       "settings": {
         "design_heading": "6",
         "heading_align": "t4s-text-center",
@@ -1116,6 +1118,7 @@
       "block_order": [
         "tab_item_Pw4jQV"
       ],
+      "disabled": true,
       "settings": {
         "design_heading": "6",
         "heading_align": "t4s-text-center",
@@ -1252,6 +1255,7 @@
         "tab_item_DPnVCj",
         "tab_item_Rc99rf"
       ],
+      "disabled": true,
       "settings": {
         "design_heading": "6",
         "heading_align": "t4s-text-center",
@@ -1284,6 +1288,7 @@
     },
     "featured_collection_icmjgU": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "design_heading": "2",
         "heading_align": "t4s-text-center",
@@ -1465,8 +1470,8 @@
     "164603504020ce33da",
     "top_heading_qnHqJM",
     "featured_collection_KLkYJe",
-    "featured_collection_pkxrqR",
-    "164603686708691778",
+    "featured_collection_6EpTde",
+    "featured_collection_wqhJFe",
     "tabs_collection_XNQrAg",
     "tabs_collection_iQMgDg",
     "top_heading_9PdpmU",
