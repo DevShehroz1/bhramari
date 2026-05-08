@@ -540,6 +540,152 @@
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
       }
     },
+    "collections_list_QCMF8T": {
+      "type": "collections-list",
+      "blocks": {
+        "collection_item_ntA7QG": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "bracelets",
+            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T080148.408.webp",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_47Trrd": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "pathfinder-pendants",
+            "image": "shopify://shop_images/IMG-4489.webp",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_4VxYpT": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "earrings",
+            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T113230.040_b6a8a5b7-1893-4daf-a3b5-f3e594117e76.jpg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_DtbQAJ": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "victory-v-rings",
+            "image": "shopify://shop_images/Website_pics_with_logo_13_eda7be9e-2118-49fd-b207-fa34f81711cd.svg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_4k8gAk": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "toe-rings",
+            "image": "shopify://shop_images/Website_pics_with_logo_20_e629805f-307c-43ad-b36d-335f671451c6.svg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_RFT93c": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "anklets-wristlets",
+            "image": "shopify://shop_images/Website_pics_with_logo_16_f75aab01-7bd1-4b96-a90f-f1ba068ba885.svg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_ntA7QG",
+        "collection_item_47Trrd",
+        "collection_item_4VxYpT",
+        "collection_item_DtbQAJ",
+        "collection_item_4k8gAk",
+        "collection_item_RFT93c"
+      ],
+      "name": "Collections list",
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "SHOP BY COLLECTION",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "head_btn_label": "View All",
+        "head_btn_url": "",
+        "head_btn_icon": false,
+        "head_btn_style": "default",
+        "head_btn_size": "medium",
+        "head_btn_cl": "dark",
+        "head_btn_effect": "default",
+        "head_btn_hidden_mb": false,
+        "collection_des": "7",
+        "title_cl": "#ffffff",
+        "title_cl_hover": "#222222",
+        "subtitle_cl": "#878787",
+        "count_cl": "#222222",
+        "border_cl": "#e5e5e5",
+        "collection_subtitle": "Products",
+        "open_link": "_self",
+        "source": "image",
+        "space_bottom": 20,
+        "space_bottom_tb": 20,
+        "space_bottom_mb": 10,
+        "border": false,
+        "item_pd": 0,
+        "item_rd": 0,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratioadapt",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout_des": "1",
+        "col_dk": "3",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_pos": "default",
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
     "featured_collection_wqhJFe": {
       "type": "featured-collection",
       "settings": {
@@ -1444,152 +1590,6 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
-    },
-    "collections_list_QCMF8T": {
-      "type": "collections-list",
-      "blocks": {
-        "collection_item_ntA7QG": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "bracelets",
-            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T080148.408.webp",
-            "icon": "las la-gem",
-            "collection_title": "",
-            "collection_link": ""
-          }
-        },
-        "collection_item_47Trrd": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "pathfinder-pendants",
-            "image": "shopify://shop_images/IMG-4489.webp",
-            "icon": "las la-gem",
-            "collection_title": "",
-            "collection_link": ""
-          }
-        },
-        "collection_item_4VxYpT": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "earrings",
-            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T113230.040_b6a8a5b7-1893-4daf-a3b5-f3e594117e76.jpg",
-            "icon": "las la-gem",
-            "collection_title": "",
-            "collection_link": ""
-          }
-        },
-        "collection_item_DtbQAJ": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "victory-v-rings",
-            "image": "shopify://shop_images/Website_pics_with_logo_13_eda7be9e-2118-49fd-b207-fa34f81711cd.svg",
-            "icon": "las la-gem",
-            "collection_title": "",
-            "collection_link": ""
-          }
-        },
-        "collection_item_4k8gAk": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "toe-rings",
-            "image": "shopify://shop_images/Website_pics_with_logo_20_e629805f-307c-43ad-b36d-335f671451c6.svg",
-            "icon": "las la-gem",
-            "collection_title": "",
-            "collection_link": ""
-          }
-        },
-        "collection_item_RFT93c": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "anklets-wristlets",
-            "image": "shopify://shop_images/Website_pics_with_logo_16_f75aab01-7bd1-4b96-a90f-f1ba068ba885.svg",
-            "icon": "las la-gem",
-            "collection_title": "",
-            "collection_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_item_ntA7QG",
-        "collection_item_47Trrd",
-        "collection_item_4VxYpT",
-        "collection_item_DtbQAJ",
-        "collection_item_4k8gAk",
-        "collection_item_RFT93c"
-      ],
-      "name": "Collections list",
-      "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "Shop by Collection",
-        "icon_heading": "las la-gem",
-        "top_subheading": "",
-        "tophead_mb": 30,
-        "head_btn_label": "View All",
-        "head_btn_url": "",
-        "head_btn_icon": false,
-        "head_btn_style": "default",
-        "head_btn_size": "medium",
-        "head_btn_cl": "dark",
-        "head_btn_effect": "default",
-        "head_btn_hidden_mb": false,
-        "collection_des": "1",
-        "title_cl": "#ffffff",
-        "title_cl_hover": "#222222",
-        "subtitle_cl": "#878787",
-        "count_cl": "#222222",
-        "border_cl": "#e5e5e5",
-        "collection_subtitle": "Products",
-        "open_link": "_self",
-        "source": "image",
-        "space_bottom": 20,
-        "space_bottom_tb": 20,
-        "space_bottom_mb": 10,
-        "border": false,
-        "item_pd": 0,
-        "item_rd": 0,
-        "img_effect": "none",
-        "b_effect": "none",
-        "image_ratio": "ratio1_1",
-        "image_size": "cover",
-        "image_position": "8",
-        "layout_des": "1",
-        "col_dk": "4",
-        "col_tb": "2",
-        "col_mb": "2",
-        "space_h_item": "30",
-        "space_v_item": "30",
-        "space_h_item_mb": "10",
-        "space_v_item_mb": "10",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "nav_btn": false,
-        "btn_pos": "default",
-        "btn_vi": "hover",
-        "btn_owl": "default",
-        "btn_shape": "none",
-        "btn_cl": "dark",
-        "btn_size": "small",
-        "btn_hidden_mobile": false,
-        "nav_dot": false,
-        "dot_owl": "default",
-        "dots_cl": "dark",
-        "dots_round": true,
-        "dots_space": 10,
-        "dots_hidden_mobile": false,
-        "layout": "t4s-container-wrap",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": ",,50px,",
-        "pd": "",
-        "mg_tb": "",
-        "pd_tb": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
     }
   },
   "order": [
@@ -1599,6 +1599,7 @@
     "top_heading_qnHqJM",
     "featured_collection_KLkYJe",
     "featured_collection_6EpTde",
+    "collections_list_QCMF8T",
     "featured_collection_wqhJFe",
     "tabs_collection_XNQrAg",
     "tabs_collection_iQMgDg",
@@ -1607,7 +1608,6 @@
     "tabs_collection_APgBy8",
     "tabs_collection_hTe9VC",
     "featured_collection_icmjgU",
-    "slideshow_kEjQH4",
-    "collections_list_QCMF8T"
+    "slideshow_kEjQH4"
   ]
 }
