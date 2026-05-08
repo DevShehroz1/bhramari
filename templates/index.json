@@ -1445,11 +1445,139 @@
         "code_cus_css": ""
       }
     },
-    "custom_html_RBxiXT": {
-      "type": "custom-html",
-      "disabled": true,
+    "collections_list_QCMF8T": {
+      "type": "collections-list",
+      "blocks": {
+        "collection_item_ntA7QG": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "bracelets",
+            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T080148.408.webp",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_47Trrd": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "pathfinder-pendants",
+            "image": "shopify://shop_images/IMG-4489.webp",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_4VxYpT": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "earrings",
+            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T113230.040_b6a8a5b7-1893-4daf-a3b5-f3e594117e76.jpg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_DtbQAJ": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "victory-v-rings",
+            "image": "shopify://shop_images/Website_pics_with_logo_13_eda7be9e-2118-49fd-b207-fa34f81711cd.svg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_4k8gAk": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "toe-rings",
+            "image": "shopify://shop_images/Website_pics_with_logo_20_e629805f-307c-43ad-b36d-335f671451c6.svg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        },
+        "collection_item_RFT93c": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "anklets-wristlets",
+            "image": "shopify://shop_images/Website_pics_with_logo_16_f75aab01-7bd1-4b96-a90f-f1ba068ba885.svg",
+            "icon": "las la-gem",
+            "collection_title": "",
+            "collection_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_ntA7QG",
+        "collection_item_47Trrd",
+        "collection_item_4VxYpT",
+        "collection_item_DtbQAJ",
+        "collection_item_4k8gAk",
+        "collection_item_RFT93c"
+      ],
+      "name": "Collections list",
       "settings": {
-        "code": "<meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <script src=\"https://kit.fontawesome.com/3f6155c803.js\" crossorigin=\"anonymous\"></script>\n    <title>Document</title>\n\n    <style>\n        * {\n            padding: 0;\n            margin: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: Arial, sans-serif;\n        }\n\n        .scroll {\n            display: flex;\n            overflow-x: auto;\n            padding: 10px;\n        }\n\n        .main {\n            display: flex;\n            gap: 20px;\n            scroll-snap-type: x mandatory;\n            overflow-x: auto;\n            scrollbar-width: none; /* Remove scrollbar for Firefox */\n            -ms-overflow-style: none; /* Remove scrollbar for IE/Edge */\n        }\n\n        .main::-webkit-scrollbar {\n            display: none; /* Remove scrollbar for Chrome, Safari, Opera */\n        }\n\n        .small {\n            height: 270px;\n            width: 160px;\n            border-radius: 30px;\n            flex-shrink: 0;\n            scroll-snap-align: start;\n        }\n\n        .controls {\n            position: sticky;\n            top: 50%;\n            transform: translateY(-50%);\n            display: none;\n        }\n\n        .scroll:hover .controls {\n            display: flex;\n        }\n\n        .left, .right {\n            height: 40px;\n            width: 40px;\n            border-radius: 50%;\n            background-color: white;\n            opacity: 0.6;\n            font-size: 20px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            cursor: pointer;\n        }\n\n        .left {\n            margin-right: 10px;\n        }\n\n        .right {\n            margin-left: 10px;\n        }\n\n        @media (max-width: 768px) {\n            .main {\n                flex-wrap: nowrap;\n            }\n            .small {\n                height: 270px;\n                width: 150px;\n            }\n            .left, .right {\n                display: none;\n            }\n        }\n    </style>\n\n\n<div class=\"scroll\">\n    <div class=\"controls\">\n        <button class=\"left\">\n            <i class=\"fas fa-chevron-left\"></i>\n        </button>\n    </div>\n    <div class=\"main\">\n        <video muted=\"\" class=\"small\" autoplay=\"\" loop=\"\" preload=\"auto\">\n            <source src=\"https://cdn.shopify.com/videos/c/o/v/a4117052ad9d4fc1af24c7bf4bf9370f.mp4\">\n        </source></video>\n        <video muted=\"\" class=\"small\" autoplay=\"\" loop=\"\" preload=\"auto\">\n            <source src=\"https://cdn.shopify.com/videos/c/o/v/a9f127cd4afe4555bcaaf3beb08599b1.mp4\">\n        </source></video>\n        <video muted=\"\" class=\"small\" autoplay=\"\" loop=\"\" preload=\"auto\">\n            <source src=\"https://cdn.shopify.com/videos/c/o/v/8122f44d54634dbdb2f94408f99dd952.mp4\">\n        </source></video>\n        <video muted=\"\" class=\"small\" autoplay=\"\" loop=\"\" preload=\"auto\">\n            <source src=\"https://cdn.shopify.com/videos/c/o/v/c9d8abd117be4c3b820e36593d575977.mp4\">\n        </source></video>\n        <video muted=\"\" class=\"small\" autoplay=\"\" loop=\"\" preload=\"auto\">\n            <source src=\"https://cdn.shopify.com/videos/c/o/v/7cf41a398e314dad8b4b96b68952b72f.mp4\">\n        </source></video>\n        <video muted=\"\" class=\"small\" autoplay=\"\" loop=\"\" preload=\"auto\">\n            <source src=\"https://cdn.shopify.com/videos/c/o/v/da688acbde354807861e403617c8c257.mp4\">\n        </source></video>\n    </div>\n    <div class=\"controls\">\n        <button class=\"right\">\n            <i class=\"fas fa-chevron-right\"></i>\n        </button>\n    </div>\n</div>\n\n<script>\n    document.addEventListener(\"DOMContentLoaded\", function() {\n        var left = document.querySelector(\".left\");\n        var right = document.querySelector(\".right\");\n        var slider = document.querySelector(\".main\");\n        var videos = Array.from(slider.querySelectorAll(\"video\"));\n\n        videos[3].style.transform = 'scale(1.15)';\n\n        right.addEventListener(\"click\", function() {\n            videos[3].style.transform = 'scale(1.0)';\n            var firstVideo = videos.pop();\n            videos.unshift(firstVideo);\n            slider.prepend(firstVideo);\n            videos[3].style\n</script>",
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Shop by Collection",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "head_btn_label": "View All",
+        "head_btn_url": "",
+        "head_btn_icon": false,
+        "head_btn_style": "default",
+        "head_btn_size": "medium",
+        "head_btn_cl": "dark",
+        "head_btn_effect": "default",
+        "head_btn_hidden_mb": false,
+        "collection_des": "1",
+        "title_cl": "#ffffff",
+        "title_cl_hover": "#222222",
+        "subtitle_cl": "#878787",
+        "count_cl": "#222222",
+        "border_cl": "#e5e5e5",
+        "collection_subtitle": "Products",
+        "open_link": "_self",
+        "source": "image",
+        "space_bottom": 20,
+        "space_bottom_tb": 20,
+        "space_bottom_mb": 10,
+        "border": false,
+        "item_pd": 0,
+        "item_rd": 0,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratio1_1",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout_des": "1",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_pos": "default",
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
@@ -1480,6 +1608,6 @@
     "tabs_collection_hTe9VC",
     "featured_collection_icmjgU",
     "slideshow_kEjQH4",
-    "custom_html_RBxiXT"
+    "collections_list_QCMF8T"
   ]
 }
