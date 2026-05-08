@@ -1475,6 +1475,7 @@
       "block_order": [
         "image_parent_aN6kGF"
       ],
+      "disabled": true,
       "settings": {
         "se_height": "t4s_ratioadapt",
         "custom_dk": true,
