@@ -12,85 +12,11 @@
     "1646028739ae283905": {
       "type": "slideshow",
       "blocks": {
-        "image_parent_jxwEwj": {
-          "type": "image_parent",
-          "settings": {
-            "image_position": "8",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "animate_slide": "none",
-            "text_align": "center",
-            "text_align_mb": "center",
-            "content_width": "auto",
-            "cv_pos": 50,
-            "ch_pos": 50,
-            "cv_pos_mb": 50,
-            "ch_pos_mb": 50,
-            "bg_overlay": "#000000",
-            "bg_opacity": 0,
-            "bg_content_cl": "#ffffff",
-            "bg_content_op": 0,
-            "content_radius": 0,
-            "box_square": false,
-            "content_pd_tb": 15,
-            "content_pd_lr": 15,
-            "content_pd_tb_tb": 15,
-            "content_pd_lr_tb": 15,
-            "content_pd_tb_mb": 10,
-            "content_pd_lr_mb": 10,
-            "border_bl": false,
-            "br_color": "#222222",
-            "br_bg": "#ffffff",
-            "br_opacity": 50,
-            "br_style": "solid",
-            "br_pd": 20,
-            "br_pd_mb": 10,
-            "time_animation": 1,
-            "animation_delay": 40
-          }
-        },
-        "164602873867eb3815-0": {
-          "type": "image_parent",
-          "settings": {
-            "image_position": "8",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "animate_slide": "none",
-            "text_align": "start",
-            "text_align_mb": "start",
-            "content_width": "container",
-            "cv_pos": 50,
-            "ch_pos": 0,
-            "cv_pos_mb": 50,
-            "ch_pos_mb": 0,
-            "bg_overlay": "#000000",
-            "bg_opacity": 0,
-            "bg_content_cl": "rgba(0,0,0,0)",
-            "bg_content_op": 0,
-            "content_radius": 0,
-            "box_square": false,
-            "content_pd_tb": 15,
-            "content_pd_lr": 15,
-            "content_pd_tb_tb": 15,
-            "content_pd_lr_tb": 15,
-            "content_pd_tb_mb": 10,
-            "content_pd_lr_mb": 10,
-            "border_bl": false,
-            "br_color": "#222222",
-            "br_bg": "#ffffff",
-            "br_opacity": 50,
-            "br_style": "solid",
-            "br_pd": 20,
-            "br_pd_mb": 10,
-            "time_animation": 1,
-            "animation_delay": 30
-          }
-        },
         "image_parent_EtngHV": {
           "type": "image_parent",
           "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2026-05-08_at_16.09.15.jpg",
+            "image_mb": "shopify://shop_images/WhatsApp_Image_2026-05-08_at_16.07.05.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -128,8 +54,6 @@
         }
       },
       "block_order": [
-        "image_parent_jxwEwj",
-        "164602873867eb3815-0",
         "image_parent_EtngHV"
       ],
       "settings": {
@@ -1590,6 +1514,70 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "accordion_mp4xMC": {
+      "type": "accordion",
+      "blocks": {
+        "accor_item_DdFEwn": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tab 01",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+          }
+        },
+        "accor_item_g3F69W": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tab 02",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+          }
+        },
+        "accor_item_CjE77R": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tab 03",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accor_item_DdFEwn",
+        "accor_item_g3F69W",
+        "accor_item_CjE77R"
+      ],
+      "name": "Accordion",
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Accordion",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#fff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -1608,6 +1596,7 @@
     "tabs_collection_APgBy8",
     "tabs_collection_hTe9VC",
     "featured_collection_icmjgU",
-    "slideshow_kEjQH4"
+    "slideshow_kEjQH4",
+    "accordion_mp4xMC"
   ]
 }
