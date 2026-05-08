@@ -1,0 +1,330 @@
+{%- liquid
+  assign s = section.settings
+  assign sid = section.id
+-%}
+
+<style>
+  .bs-{{ sid }} {
+    background: {{ s.bg_color }};
+    color: {{ s.text_color }};
+    padding: {{ s.padding_dk }}px 24px;
+  }
+  .bs-{{ sid }} .bs-wrap {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 80px;
+    align-items: center;
+  }
+  .bs-{{ sid }} .bs-text {
+    padding: {{ s.text_pad_y }}px 0;
+    max-width: 460px;
+  }
+  .bs-{{ sid }} .bs-lead {
+    font-family: {{ s.heading_font }};
+    font-size: {{ s.lead_size }}px;
+    line-height: 1.4;
+    font-style: italic;
+    font-weight: 400;
+    color: {{ s.text_color }};
+    margin: 0 0 28px;
+  }
+  .bs-{{ sid }} .bs-lead p { margin: 0; }
+  .bs-{{ sid }} .bs-lead strong,
+  .bs-{{ sid }} .bs-lead em {
+    color: {{ s.accent_color }};
+    font-weight: 600;
+    font-style: italic;
+  }
+  .bs-{{ sid }} .bs-divider {
+    width: 64px;
+    height: 1px;
+    background: {{ s.text_color }};
+    opacity: .35;
+    border: 0;
+    margin: 0 0 24px;
+  }
+  .bs-{{ sid }} .bs-body {
+    font-size: {{ s.body_size }}px;
+    line-height: 1.7;
+    color: {{ s.text_color }};
+    opacity: .82;
+    margin: 0 0 26px;
+  }
+  .bs-{{ sid }} .bs-body p { margin: 0 0 8px; }
+  .bs-{{ sid }} .bs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .bs-{{ sid }} .bs-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: {{ s.body_size }}px;
+    line-height: 1.45;
+    color: {{ s.text_color }};
+    opacity: .92;
+  }
+  .bs-{{ sid }} .bs-list .bs-icon {
+    color: {{ s.accent_color }};
+    flex: 0 0 18px;
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 1.45;
+    text-align: center;
+  }
+  .bs-{{ sid }} .bs-image {
+    border-radius: {{ s.image_radius }}px;
+    overflow: hidden;
+    aspect-ratio: {{ s.image_ratio }};
+    background: rgba(255,255,255,.04);
+  }
+  .bs-{{ sid }} .bs-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .bs-{{ sid }} .bs-image-empty {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: {{ s.text_color }};
+    opacity: .35;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1024px) {
+    .bs-{{ sid }} .bs-wrap { gap: 50px; }
+    .bs-{{ sid }} .bs-lead { font-size: {{ s.lead_size | minus: 2 }}px; }
+  }
+
+  @media (max-width: 767px) {
+    .bs-{{ sid }} { padding: {{ s.padding_mb }}px 18px; }
+    .bs-{{ sid }} .bs-wrap {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    .bs-{{ sid }} .bs-image { order: -1; aspect-ratio: {{ s.image_ratio_mb }}; }
+    .bs-{{ sid }} .bs-text { padding: 0; max-width: none; }
+    .bs-{{ sid }} .bs-lead { font-size: {{ s.lead_size_mb }}px; }
+    .bs-{{ sid }} .bs-body { font-size: {{ s.body_size_mb }}px; }
+    .bs-{{ sid }} .bs-list li { font-size: {{ s.body_size_mb }}px; }
+  }
+</style>
+
+<section class="bs-{{ sid }}">
+  <div class="bs-wrap">
+    <div class="bs-text">
+      {%- if s.lead != blank -%}
+        <div class="bs-lead">{{ s.lead }}</div>
+      {%- endif -%}
+      {%- if s.show_divider -%}
+        <hr class="bs-divider">
+      {%- endif -%}
+      {%- if s.body != blank -%}
+        <div class="bs-body">{{ s.body }}</div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <ul class="bs-list">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}>
+              <span class="bs-icon" aria-hidden="true">{{ block.settings.icon | default: '✦' }}</span>
+              <span>{{ block.settings.text }}</span>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+    <div class="bs-image">
+      {%- if s.image != blank -%}
+        {{ s.image | image_url: width: 1400 | image_tag: loading: 'lazy', alt: s.image.alt, widths: '480, 768, 1024, 1400' }}
+      {%- else -%}
+        <div class="bs-image-empty">Add an image</div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Brand Story",
+  "tag": "section",
+  "class": "section-brand-story",
+  "settings": [
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image aspect (desktop)",
+      "default": "4 / 5",
+      "options": [
+        { "value": "1 / 1", "label": "Square" },
+        { "value": "4 / 5", "label": "Portrait 4:5" },
+        { "value": "3 / 4", "label": "Portrait 3:4" },
+        { "value": "16 / 10", "label": "Landscape 16:10" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_ratio_mb",
+      "label": "Image aspect (mobile)",
+      "default": "4 / 5",
+      "options": [
+        { "value": "1 / 1", "label": "Square" },
+        { "value": "4 / 5", "label": "Portrait 4:5" },
+        { "value": "3 / 4", "label": "Portrait 3:4" },
+        { "value": "16 / 10", "label": "Landscape 16:10" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "label": "Image corner radius",
+      "min": 0, "max": 40, "step": 2, "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_dk",
+      "label": "Section padding (desktop)",
+      "min": 40, "max": 160, "step": 4, "unit": "px",
+      "default": 88
+    },
+    {
+      "type": "range",
+      "id": "padding_mb",
+      "label": "Section padding (mobile)",
+      "min": 20, "max": 100, "step": 4, "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "text_pad_y",
+      "label": "Text vertical padding (desktop)",
+      "min": 0, "max": 60, "step": 2, "unit": "px",
+      "default": 0
+    },
+
+    { "type": "header", "content": "Text" },
+    {
+      "type": "richtext",
+      "id": "lead",
+      "label": "Lead paragraph (italic, supports bold/italic for accent words)",
+      "default": "<p>Our jewellery is <strong>handcrafted in India</strong> in collaboration with <strong>master artisans, heritage silversmiths,</strong> and <strong>trusted gem cutters</strong>.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "label": "Show divider line",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body paragraph",
+      "default": "<p>We source 925 sterling silver from certified suppliers with a focus on traceability — from refinery to finished piece. This labour of love results in</p>"
+    },
+
+    { "type": "header", "content": "Typography" },
+    {
+      "type": "text",
+      "id": "heading_font",
+      "label": "Lead font family (CSS)",
+      "default": "'Cormorant Garamond', 'Times New Roman', Georgia, serif"
+    },
+    {
+      "type": "range",
+      "id": "lead_size",
+      "label": "Lead size (desktop)",
+      "min": 16, "max": 32, "step": 1, "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "lead_size_mb",
+      "label": "Lead size (mobile)",
+      "min": 14, "max": 28, "step": 1, "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "body_size",
+      "label": "Body size (desktop)",
+      "min": 12, "max": 18, "step": 1, "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "body_size_mb",
+      "label": "Body size (mobile)",
+      "min": 12, "max": 18, "step": 1, "unit": "px",
+      "default": 14
+    },
+
+    { "type": "header", "content": "Colours" },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#1f2a3a"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#f4ecd8"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent (gold/highlight)",
+      "default": "#d6a64f"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "bullet",
+      "name": "Bullet item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon character",
+          "info": "A unicode character or emoji used as the bullet marker (e.g. ✦ ✧ ✸ ❖ ✂)",
+          "default": "✦"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Add a benefit or value point here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Story",
+      "category": "Storytelling",
+      "blocks": [
+        { "type": "bullet", "settings": { "icon": "✦", "text": "Pure 925, BIS-hallmarked silver" } },
+        { "type": "bullet", "settings": { "icon": "✦", "text": "Hand-finished, heirloom-grade craftsmanship" } },
+        { "type": "bullet", "settings": { "icon": "✦", "text": "Pieces that honour heritage and modern design" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

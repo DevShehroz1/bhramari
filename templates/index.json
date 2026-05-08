@@ -1462,6 +1462,56 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "brand_story_main": {
+      "type": "brand-story",
+      "blocks": {
+        "bullet_1": {
+          "type": "bullet",
+          "settings": {
+            "icon": "✦",
+            "text": "Pure 925, BIS-hallmarked silver"
+          }
+        },
+        "bullet_2": {
+          "type": "bullet",
+          "settings": {
+            "icon": "✦",
+            "text": "Hand-finished, heirloom-grade craftsmanship"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "icon": "✦",
+            "text": "Pieces that honour heritage and modern design"
+          }
+        }
+      },
+      "block_order": [
+        "bullet_1",
+        "bullet_2",
+        "bullet_3"
+      ],
+      "settings": {
+        "image_ratio": "4 / 5",
+        "image_ratio_mb": "4 / 5",
+        "image_radius": 6,
+        "padding_dk": 88,
+        "padding_mb": 48,
+        "text_pad_y": 0,
+        "lead": "<p>Our jewellery is <strong>handcrafted in India</strong> in collaboration with <strong>master artisans, heritage silversmiths,</strong> and <strong>trusted gem cutters</strong>.</p>",
+        "show_divider": true,
+        "body": "<p>We source 925 sterling silver from certified suppliers with a focus on traceability — from refinery to finished piece. This labour of love results in</p>",
+        "heading_font": "'Cormorant Garamond', 'Times New Roman', Georgia, serif",
+        "lead_size": 20,
+        "lead_size_mb": 18,
+        "body_size": 14,
+        "body_size_mb": 14,
+        "bg_color": "#1f2a3a",
+        "text_color": "#f4ecd8",
+        "accent_color": "#d6a64f"
+      }
     }
   },
   "order": [
@@ -1470,6 +1520,7 @@
     "164603504020ce33da",
     "top_heading_qnHqJM",
     "featured_collection_KLkYJe",
+    "brand_story_main",
     "featured_collection_6EpTde",
     "featured_collection_wqhJFe",
     "tabs_collection_XNQrAg",
