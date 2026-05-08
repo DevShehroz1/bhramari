@@ -1521,32 +1521,50 @@
         "accor_item_DdFEwn": {
           "type": "accor_item",
           "settings": {
-            "icon": "none",
-            "title": "Tab 01",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "icon": "question_mark",
+            "title": "Who is Bhramari?",
+            "content": "<p>The word \"Bhramari\" is a Sanskrit word that means \"Queen Bee\". It is a brand that stands for strength & resiliency of every woman just like a Queen Bee for embracing the inner queen and celebrating every little achievement.</p><p>Bhramari brings you the best of handcrafted Silver Jewellery Designs in Silver and 18kt Gold plated jewellery (on 925 silver) at an unmatchable pricing and delightful services. All our Jewellery is 92.5 hallmarked.</p>"
           }
         },
         "accor_item_g3F69W": {
           "type": "accor_item",
           "settings": {
-            "icon": "none",
-            "title": "Tab 02",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "icon": "question_mark",
+            "title": "Where is Bhramari based?",
+            "content": "<p>Our inspiration is based on nature, seasons, colours, moods, cultures and life's struggle that makes every woman a Queen. It's a home grown brand based in Bangalore, Karnataka- India. </p>"
           }
         },
         "accor_item_CjE77R": {
           "type": "accor_item",
           "settings": {
-            "icon": "none",
-            "title": "Tab 03",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "icon": "question_mark",
+            "title": "How is the jewellery made?",
+            "content": "<p>Most of our jewellery are handcrafted by the artisans based out of various places in India. So, no two are alike. You can expect some smudge of colour (especially in the hand Minakari work) or slight variations or marks that are called 'artisan marks' on a few pieces of jewellery which is not considered as a defect. It’s a proud symbol of any handmade piece of art. It also highlights the authenticity and uniqueness of our products in a positive and professional way.</p>"
+          }
+        },
+        "accor_item_nBJbyh": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "question_mark",
+            "title": "What is the purity of the silver jewellery?",
+            "content": "<p>Our silver jewellery is crafted with 92.5% pure sterling silver, ensuring high quality and durability.</p>"
+          }
+        },
+        "accor_item_mAneYx": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "question_mark",
+            "title": "Are the products hypoallergenic?",
+            "content": "<p>Pure 925 silver is generally hypoallergenic, making it suitable for most skin types. However, if you have a specific medical concern, feel free to ask.</p>"
           }
         }
       },
       "block_order": [
         "accor_item_DdFEwn",
         "accor_item_g3F69W",
-        "accor_item_CjE77R"
+        "accor_item_CjE77R",
+        "accor_item_nBJbyh",
+        "accor_item_mAneYx"
       ],
       "name": "Accordion",
       "settings": {
@@ -1557,12 +1575,12 @@
         "top_subheading": "",
         "tophead_mb": 30,
         "accor_des": "1",
-        "title_cl": "#222",
+        "title_cl": "#222222",
         "bg_title_cl": "#f6f6f8",
-        "title_active_cl": "#000",
+        "title_active_cl": "#000000",
         "bg_title_active_cl": "#f6f6f8",
         "content_cl": "#878787",
-        "bg_content_cl": "#fff",
+        "bg_content_cl": "#ffffff",
         "content_align": "t4s-text-start",
         "auto_active": true,
         "layout": "t4s-container-wrap",
