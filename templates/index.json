@@ -512,7 +512,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "bracelets",
-            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T080148.408.webp",
+            "image": "shopify://shop_images/WhatsApp_Image_2026-05-09_at_10.11.05.jpg",
             "icon": "las la-gem",
             "collection_title": "",
             "collection_link": ""
@@ -532,7 +532,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "earrings",
-            "image": "shopify://shop_images/Website_pics_with_logo_-_2026-01-26T113230.040_b6a8a5b7-1893-4daf-a3b5-f3e594117e76.jpg",
+            "image": "shopify://shop_images/WhatsApp_Image_2026-05-09_at_10.11.54.jpg",
             "icon": "las la-gem",
             "collection_title": "",
             "collection_link": ""
@@ -542,7 +542,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "victory-v-rings",
-            "image": "shopify://shop_images/Website_pics_with_logo_13_eda7be9e-2118-49fd-b207-fa34f81711cd.svg",
+            "image": "shopify://shop_images/WhatsApp_Image_2026-05-09_at_10.19.56.jpg",
             "icon": "las la-gem",
             "collection_title": "",
             "collection_link": ""
@@ -577,6 +577,7 @@
         "collection_item_4k8gAk",
         "collection_item_RFT93c"
       ],
+      "disabled": true,
       "name": "Collections list",
       "settings": {
         "design_heading": "1",
