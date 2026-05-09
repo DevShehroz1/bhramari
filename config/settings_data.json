@@ -571,50 +571,11 @@
               "lb_cl": ""
             }
           },
-          "base_jenJb3": {
-            "type": "base",
-            "settings": {
-              "title": "Bangles & Bracelets",
-              "url": "shopify://collections/bracelets",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "sale",
-              "lb_cl": "#ec0101"
-            }
-          },
-          "base_MNTHwk": {
-            "type": "base",
-            "settings": {
-              "title": "Pendants & Necklaces",
-              "url": "shopify://collections/pathfinder-pendants",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#ec0101"
-            }
-          },
-          "base_QLeBDJ": {
-            "type": "base",
-            "settings": {
-              "title": "Adjustable Finger Rings",
-              "url": "shopify://collections/victory-v-rings",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#ec0101"
-            }
-          },
           "base_aYpDyA": {
             "type": "base",
             "settings": {
-              "title": "18KT Gold Plated",
-              "url": "shopify://collections/gold-plated-1",
+              "title": "New Arrivals",
+              "url": "shopify://collections/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -626,8 +587,8 @@
           "base_rgezyE": {
             "type": "base",
             "settings": {
-              "title": "Gift Under 3000",
-              "url": "shopify://collections/gifts-under-3000",
+              "title": "Best Sellers",
+              "url": "shopify://collections/bangles",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -639,8 +600,8 @@
           "base_xLWXFp": {
             "type": "base",
             "settings": {
-              "title": "Toe Rings",
-              "url": "shopify://collections/toe-rings",
+              "title": "Gift Store",
+              "url": "shopify://collections/gifts-under-3000",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -649,17 +610,21 @@
               "lb_cl": "#ec0101"
             }
           },
-          "base_DRkXU8": {
-            "type": "base",
+          "drop_cencBC": {
+            "type": "drop",
             "settings": {
-              "title": "Anklets & Bracelets",
-              "url": "shopify://collections/anklets-wristlets",
+              "title": "Shop by Category",
+              "url": "",
               "open_link": "_self",
+              "menu": "",
               "icon": "",
               "cus_cl": false,
               "cl": "#ec0101",
               "lb": "",
-              "lb_cl": "#ec0101"
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos_sub": "bottom",
+              "pos": "left"
             }
           },
           "base_CCaczK": {
@@ -679,13 +644,10 @@
         "block_order": [
           "base_yqxD6T",
           "base_CKETnq",
-          "base_jenJb3",
-          "base_MNTHwk",
-          "base_QLeBDJ",
           "base_aYpDyA",
           "base_rgezyE",
           "base_xLWXFp",
-          "base_DRkXU8",
+          "drop_cencBC",
           "base_CCaczK"
         ],
         "settings": {
