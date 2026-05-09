@@ -255,7 +255,7 @@
             "collection": "earrings",
             "image": "shopify://shop_images/IMG_4583.png",
             "collection_title": "EARRINGS",
-            "collection_link": ""
+            "collection_link": "shopify://collections/earrings"
           }
         },
         "1646035040fee424aa-2": {
@@ -264,7 +264,7 @@
             "collection": "necklaces-necklaces",
             "image": "shopify://shop_images/IMG_4456.jpg",
             "collection_title": "NECKLACES",
-            "collection_link": ""
+            "collection_link": "shopify://collections/pathfinder-pendants"
           }
         },
         "fb81d2b5-38b4-4322-93fc-cd722f8758f3": {
@@ -273,7 +273,7 @@
             "collection": "necklaces-choker",
             "image": "shopify://shop_images/IMG_4584.png",
             "collection_title": "CHOKAR",
-            "collection_link": ""
+            "collection_link": "shopify://collections/pathfinder-pendants"
           }
         },
         "collection_item_DbVMtb": {
@@ -282,7 +282,7 @@
             "collection": "hand-pieces-clutch",
             "image": "shopify://shop_images/IMG_4588.png",
             "collection_title": "CLUTCH",
-            "collection_link": ""
+            "collection_link": "shopify://collections/dazzling-drops-and-danglers"
           }
         }
       },
