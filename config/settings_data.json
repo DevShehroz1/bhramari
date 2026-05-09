@@ -577,7 +577,7 @@
               "title": "Shop by Category",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "shop-by-category",
               "icon": "",
               "cus_cl": false,
               "cl": "#ec0101",
