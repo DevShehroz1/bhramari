@@ -575,7 +575,7 @@
             "type": "drop",
             "settings": {
               "title": "Shop by Category",
-              "url": "",
+              "url": "shopify://collections/all",
               "open_link": "_self",
               "menu": "shop-by-category",
               "icon": "",
