@@ -279,9 +279,9 @@
         "collection_item_DbVMtb": {
           "type": "collection_item",
           "settings": {
-            "collection": "hand-pieces-clutch",
+            "collection": "bangles",
             "image": "shopify://shop_images/IMG_4588.png",
-            "collection_title": "CLUTCH",
+            "collection_title": "SHOP ALL",
             "collection_link": "shopify://collections/dazzling-drops-and-danglers"
           }
         }
@@ -1666,7 +1666,7 @@
             "corner_styling": "soft",
             "header_text_color": "#000000",
             "text_color": "#000000",
-            "card_color": "#F9F9F9",
+            "card_color": "#f9f9f9",
             "stars_color": "",
             "arrows_color": "#000000",
             "transition_speed": 5,
