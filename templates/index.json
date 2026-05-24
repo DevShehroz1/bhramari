@@ -12,11 +12,11 @@
     "1646028739ae283905": {
       "type": "slideshow",
       "blocks": {
-        "image_parent_EtngHV": {
+        "image_parent_Kp7GhH": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify://shop_images/65facc61-86ba-4b85-83d5-d01b9576a33d.jpg",
-            "image_mb": "shopify://shop_images/WhatsApp_Image_2026-05-20_at_08.14.57.jpg",
+            "image": "shopify://shop_images/IMG_6140.png",
+            "image_mb": "shopify://shop_images/IMG_6139.png",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -52,12 +52,11 @@
             "animation_delay": 30
           }
         },
-        "image_parent_Kp7GhH": {
+        "image_parent_EtngHV": {
           "type": "image_parent",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2026-05-08_at_16.09.15.jpg",
-            "image_mb": "shopify://shop_images/WhatsApp_Image_2026-05-08_at_16.07.05.jpg",
+            "image": "shopify://shop_images/65facc61-86ba-4b85-83d5-d01b9576a33d.jpg",
+            "image_mb": "shopify://shop_images/WhatsApp_Image_2026-05-20_at_08.14.57.jpg",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -135,8 +134,8 @@
         }
       },
       "block_order": [
-        "image_parent_EtngHV",
         "image_parent_Kp7GhH",
+        "image_parent_EtngHV",
         "image_parent_zYiGag"
       ],
       "settings": {
