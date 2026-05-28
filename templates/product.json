@@ -136,14 +136,6 @@
             "space_h_item_mb": "20",
             "space_v_item_mb": "4"
           }
-        },
-        "bded529b-9b8f-4d5c-8f04-5de0b22e627d": {
-          "type": "tab_html",
-          "settings": {
-            "title": "Collapsible tab",
-            "content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -154,8 +146,7 @@
         "meta",
         "95d4f334-8ea7-4cd2-b609-2373b1e848b8",
         "e36839f5-0847-44e2-97d3-2885597bd1ff",
-        "94011ade-ec25-4d68-b37a-70660ede49dd",
-        "bded529b-9b8f-4d5c-8f04-5de0b22e627d"
+        "94011ade-ec25-4d68-b37a-70660ede49dd"
       ],
       "settings": {
         "pr_layout": "default",
@@ -190,7 +181,7 @@
         "tabs_design": "accordion",
         "tabs_design_mb": "accordion",
         "tabs_position": "external",
-        "enable_first_tab": false,
+        "enable_first_tab": true,
         "tabs_layout_fix": "full",
         "bg": "#f6f6f8",
         "bg_mb": "#ffffff",
