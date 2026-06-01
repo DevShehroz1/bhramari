@@ -123,15 +123,6 @@
                   {{ money_original_price }}
                {%- endif -%}
              </div>
-             {%- if item.unit_price_measurement -%}
-                {%- capture unit_price_base_unit -%}
-                  {%- if item.unit_price_measurement.reference_value != 1 -%}
-                    {{- item.unit_price_measurement.reference_value -}}
-                  {%- endif -%}
-                  {{ item.unit_price_measurement.reference_unit }}
-                {%- endcapture -%}
-                <div class="t4s-cart_unit_price">{{ item.unit_price | money }}<span>/</span>{{- unit_price_base_unit -}}</div>
-             {%- endif -%}
              {%- if item.line_level_discount_allocations != blank -%}
                 <ul class="t4s-cart_discount_price">
                    {%- for discount_allocation in item.line_level_discount_allocations -%}
