@@ -57,7 +57,6 @@ else
     assign money_price = price | money
     assign money_compare_at_price = compare_at_price | money
 endif
-assign variant_unit_price_measurement = variant.unit_price_measurement
 if price_varies and price_varies_style != '0'
   assign isRangePrices = true
   assign pr_no_pick_prices = false
@@ -85,7 +84,7 @@ endif -%}
   {%- endif -%}
 {%- endcapture -%}
 
-<div class="t4s-product-price"{%- if variant_unit_price_measurement == nil and isRangePrices == false or pr_no_pick_prices -%} data-pr-price data-product-price data-saletype="{{ type_sale }}"{% else %} data-product-unit-price{% endif %} {{ style_inline }}>
+<div class="t4s-product-price"{%- if isRangePrices == false or pr_no_pick_prices -%} data-pr-price data-product-price data-saletype="{{ type_sale }}"{% else %} data-product-unit-price{% endif %} {{ style_inline }}>
    
   {%- if isRangePrices -%}
 
@@ -106,24 +105,6 @@ endif -%}
           {%- else -%}
           {{ 'products.product.from_price_html' | t: price_min: money_price, class: 't4s-price-from' }}
           {%- endif -%}
-
-  {%- elsif variant_unit_price_measurement -%}
-      <span {% unless isRangePrices %} data-pr-price data-product-price data-saletype="{{ type_sale }}"{% endunless %}>
-      {%- if on_sale -%}<del>{{ money_compare_at_price }}</del> <ins>{{ money_price }}</ins>{{ sale_badge_html }}{%- else -%}{{ money_price }}{%- endif -%}
-      </span>
-      
-      {%- assign price_unit = variant.unit_price | money -%}
-      {%- capture unit_price_base_unit -%}
-        <span data-unit-base class="t4s-unit_base">
-         {%- if variant_unit_price_measurement -%}
-           {%- if variant_unit_price_measurement.reference_value != 1 -%}
-             {{- variant_unit_price_measurement.reference_value -}}
-           {%- endif -%} 
-           {{ variant_unit_price_measurement.reference_unit }}
-         {%- endif -%}
-        </span>
-      {%- endcapture -%}
-      <div class="t4s-price__unit"><span data-unit-price class="t4s-unit_price">{{ price_unit }}</span><span>/</span>{{- unit_price_base_unit -}}</div>
 
   {%- elsif on_sale -%}<del>{{ money_compare_at_price }}</del> <ins>{{ money_price }}</ins>{{ sale_badge_html }}
   {%- else -%}{{ money_price }}
