@@ -47,6 +47,16 @@
             "price_sale_color": "#ec0101"
           }
         },
+        "description_FVUaRH": {
+          "type": "description",
+          "settings": {
+            "des": "2",
+            "text": "",
+            "length": 56,
+            "readm": false,
+            "readm_txt": "Read more"
+          }
+        },
         "live_view_bnTgdc": {
           "type": "live_view",
           "settings": {
@@ -128,6 +138,7 @@
       "block_order": [
         "title",
         "price_review",
+        "description_FVUaRH",
         "live_view_bnTgdc",
         "form",
         "95d4f334-8ea7-4cd2-b609-2373b1e848b8",
