@@ -1031,6 +1031,31 @@
     "name": "General Product",
     "settings": [
       {
+        "type": "header",
+        "content": "Enquire instead of Add to Cart"
+      },
+      {
+        "type": "paragraph",
+        "content": "Pick a collection — products in it will show an \"Enquire Now\" button (linking to the URL below) instead of Add to Cart, on the product page and everywhere the product card appears."
+      },
+      {
+        "type": "collection",
+        "id": "enquire_collection",
+        "label": "Enquire-only collection"
+      },
+      {
+        "type": "text",
+        "id": "enquire_label",
+        "label": "Enquire button label",
+        "default": "Enquire Now"
+      },
+      {
+        "type": "url",
+        "id": "enquire_link",
+        "label": "Enquire button link",
+        "info": "Page, blog, or external URL to open when the button is clicked."
+      },
+      {
         "type": "checkbox",
         "id": "atc_ajax_enable",
         "label": "Enable ajax add to cart",

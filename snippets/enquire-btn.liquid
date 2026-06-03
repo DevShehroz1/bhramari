@@ -1,0 +1,43 @@
+{%- comment -%}
+  Renders an "Enquire Now" link in place of the Add to Cart button
+  for products that belong to settings.enquire_collection.
+
+  Usage:
+    {%- render 'enquire-btn', product: product, style: 'main', bk_stts: bk_stts -%}
+    {%- render 'enquire-btn', product: product, style: 'card' -%}
+
+  Sets the variable `is_enquire` so the caller can decide whether to render
+  its own ATC button. When style is provided, also outputs the button markup.
+{%- endcomment -%}
+
+{%- assign is_enquire = false -%}
+{%- if settings.enquire_collection != blank and product != blank -%}
+  {%- assign _target_handle = settings.enquire_collection.handle -%}
+  {%- assign _handles = product.collections | map: 'handle' | join: '|' -%}
+  {%- if _handles contains _target_handle -%}
+    {%- assign is_enquire = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if is_enquire and style != blank -%}
+  {%- assign _label = settings.enquire_label | default: 'Enquire Now' -%}
+  {%- assign _link = settings.enquire_link | default: '#' -%}
+
+  {%- if style == 'main' -%}
+    <a href="{{ _link }}" class="t4s-product-form__submit t4s-truncate is--btn-enquire t4s-btn t4s-btn-base t4s-btn-style-{{ bk_stts.button_style }} t4s-btn-color-{{ bk_stts.button_color }} t4s-w-100 t4s-justify-content-center{% if bk_stts.button_style == 'default' or bk_stts.button_style == 'outline' %} t4s-btn-effect-{{ bk_stts.button_effect }}{% endif %}">
+      {%- if bk_stts.btn_icon -%}<svg class="t4s-btn-icon" viewBox="0 0 24 24"><use xlink:href="#t4s-icon-atc"></use></svg>{%- endif -%}
+      <span class="t4s-btn-atc_text">{{ _label }}</span>
+    </a>
+
+  {%- elsif style == 'sticky' -%}
+    <a href="{{ _link }}" class="t4s-sticky-atc__atc is--btn-enquire">
+      <span class="t4s-btn-atc_text">{{ _label }}</span>
+    </a>
+
+  {%- else -%}
+    <a href="{{ _link }}" class="t4s-pr-item-btn t4s-pr-addtocart is--btn-enquire" rel="nofollow">
+      <span class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-atc"></use></svg></span>
+      <span class="t4s-text-pr">{{ _label }}</span>
+    </a>
+  {%- endif -%}
+{%- endif -%}
