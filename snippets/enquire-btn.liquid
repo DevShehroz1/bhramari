@@ -1,6 +1,6 @@
 {%- comment -%}
   Renders an "Enquire Now" link in place of the Add to Cart button
-  for products that belong to settings.enquire_collection.
+  for products whose configured metafield is truthy.
 
   Usage:
     {%- render 'enquire-btn', product: product, style: 'main', bk_stts: bk_stts -%}
@@ -11,10 +11,11 @@
 {%- endcomment -%}
 
 {%- assign is_enquire = false -%}
-{%- if settings.enquire_collection != blank and product != blank -%}
-  {%- assign _target_handle = settings.enquire_collection.handle -%}
-  {%- assign _handles = product.collections | map: 'handle' | join: '|' -%}
-  {%- if _handles contains _target_handle -%}
+{%- if product != blank -%}
+  {%- assign _ns = settings.enquire_metafield_namespace | default: 'custom' -%}
+  {%- assign _key = settings.enquire_metafield_key | default: 'enquire_only' -%}
+  {%- assign _mf = product.metafields[_ns][_key] -%}
+  {%- if _mf and _mf != false and _mf != 'false' and _mf != '0' and _mf != blank -%}
     {%- assign is_enquire = true -%}
   {%- endif -%}
 {%- endif -%}
