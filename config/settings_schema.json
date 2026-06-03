@@ -1031,6 +1031,38 @@
     "name": "General Product",
     "settings": [
       {
+        "type": "header",
+        "content": "Enquire instead of Add to Cart"
+      },
+      {
+        "type": "paragraph",
+        "content": "Any product whose metafield (namespace + key below) has a truthy value will show an \"Enquire Now\" button instead of Add to Cart — on the product page and everywhere the product card appears. Create the metafield once in Shopify Admin → Settings → Custom data → Products, then toggle it on per product."
+      },
+      {
+        "type": "text",
+        "id": "enquire_metafield_namespace",
+        "label": "Metafield namespace",
+        "default": "custom"
+      },
+      {
+        "type": "text",
+        "id": "enquire_metafield_key",
+        "label": "Metafield key",
+        "default": "enquire_only"
+      },
+      {
+        "type": "text",
+        "id": "enquire_label",
+        "label": "Enquire button label",
+        "default": "Enquire Now"
+      },
+      {
+        "type": "url",
+        "id": "enquire_link",
+        "label": "Enquire button link",
+        "info": "Page, blog, or external URL to open when the button is clicked."
+      },
+      {
         "type": "checkbox",
         "id": "atc_ajax_enable",
         "label": "Enable ajax add to cart",
