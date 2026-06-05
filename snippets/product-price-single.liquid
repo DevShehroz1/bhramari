@@ -14,6 +14,16 @@
 {% endcomment %}
 
 {%- liquid
+  assign _enq_ns  = settings.enquire_metafield_namespace | default: 'custom'
+  assign _enq_key = settings.enquire_metafield_key | default: 'enquire_only'
+  assign _enq_mf  = product.metafields[_enq_ns][_enq_key]
+  assign is_enquire = false
+  if _enq_mf and _enq_mf != false and _enq_mf != 'false' and _enq_mf != '0' and _enq_mf != blank
+    assign is_enquire = true
+  endif
+-%}
+{%- if is_enquire -%}{%- else -%}
+{%- liquid
 if variant.title and price_varies_style == '0'
   assign price = variant.price
   assign compare_at_price = variant.compare_at_price | default: price
@@ -110,3 +120,4 @@ endif -%}
   {%- else -%}{{ money_price }}
   {%- endif -%}
 </div>
+{%- endif -%}

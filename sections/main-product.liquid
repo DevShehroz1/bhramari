@@ -833,7 +833,18 @@ endif -%}
       </div>
       <div class="t4s-sticky-atc__infos">
         <div class="t4s-sticky-atc__title">{{ product.title }}</div>
+        {%- liquid
+          assign _enq_ns  = settings.enquire_metafield_namespace | default: 'custom'
+          assign _enq_key = settings.enquire_metafield_key | default: 'enquire_only'
+          assign _enq_mf  = product.metafields[_enq_ns][_enq_key]
+          assign is_enquire_sticky = false
+          if _enq_mf and _enq_mf != false and _enq_mf != 'false' and _enq_mf != '0' and _enq_mf != blank
+            assign is_enquire_sticky = true
+          endif
+        -%}
+        {%- unless is_enquire_sticky -%}
         <div data-sticky-price class="t4s-sticky-atc__price">{% if current_variant.compare_at_price > current_variant.price %}<del>{{ current_variant.compare_at_price | money }}</del> <ins>{{ current_variant.price | money }}</ins>{% else %}{{ current_variant.price | money }}{% endif %}</div>
+        {%- endunless -%}
       </div>
 
       {%- if variants_size > 1 and se_stts.sticky_layout_mb == 'minimal' %}<button type="button" class="t4s-sticky-close" data-action-info-close aria-label="Close"><svg role="presentation" class="t4s-iconsvg-close" viewBox="0 0 16 14"><path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path></svg></button>{% endif -%}
