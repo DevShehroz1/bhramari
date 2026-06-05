@@ -14,6 +14,7 @@
       "blocks": {
         "image_parent_Kp7GhH": {
           "type": "image_parent",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/IMG_6140.png",
             "image_mb": "shopify://shop_images/IMG_6139.png",
@@ -59,7 +60,7 @@
             "image_mb": "shopify://shop_images/WhatsApp_Image_2026-05-20_at_08.14.57.jpg",
             "image_position": "8",
             "cl_img": "",
-            "link_img1": "",
+            "link_img1": "shopify://collections/bhramari-aurum",
             "open_link": "_blank",
             "animate_slide": "none",
             "text_align": "start",
