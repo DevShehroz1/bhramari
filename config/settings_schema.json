@@ -1057,10 +1057,24 @@
         "default": "Enquire Now"
       },
       {
+        "type": "text",
+        "id": "enquire_whatsapp",
+        "label": "WhatsApp number",
+        "info": "Digits only with country code (no +, no spaces). Example: 919538233355 for +91 95382 33355. When set, the button opens a WhatsApp chat with this number; the message is prefilled with the product name and URL.",
+        "default": "919538233355"
+      },
+      {
+        "type": "text",
+        "id": "enquire_message",
+        "label": "WhatsApp prefilled message",
+        "info": "Use {product} and {url} as placeholders for the product name and link.",
+        "default": "Hi! I'd like to enquire about {product} — {url}"
+      },
+      {
         "type": "url",
         "id": "enquire_link",
-        "label": "Enquire button link",
-        "info": "Page, blog, or external URL to open when the button is clicked."
+        "label": "Fallback link (used only if WhatsApp number above is empty)",
+        "info": "Optional. Page, blog, or external URL — only used when no WhatsApp number is set."
       },
       {
         "type": "checkbox",
