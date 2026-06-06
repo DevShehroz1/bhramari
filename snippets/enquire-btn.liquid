@@ -22,21 +22,32 @@
 
 {%- if is_enquire and style != blank -%}
   {%- assign _label = settings.enquire_label | default: 'Enquire Now' -%}
-  {%- assign _link = settings.enquire_link | default: '#' -%}
+
+  {%- comment -%} Build WhatsApp link with prefilled message, or fall back to enquire_link {%- endcomment -%}
+  {%- assign _wa_raw = settings.enquire_whatsapp | default: '' -%}
+  {%- assign _wa_number = _wa_raw | remove: '+' | remove: ' ' | remove: '-' | remove: '(' | remove: ')' -%}
+  {%- if _wa_number != blank -%}
+    {%- assign _msg_template = settings.enquire_message | default: "Hi! I'd like to enquire about {product} — {url}" -%}
+    {%- assign _product_url = shop.url | append: product.url -%}
+    {%- assign _msg = _msg_template | replace: '{product}', product.title | replace: '{url}', _product_url | url_encode -%}
+    {%- assign _link = 'https://wa.me/' | append: _wa_number | append: '?text=' | append: _msg -%}
+  {%- else -%}
+    {%- assign _link = settings.enquire_link | default: '#' -%}
+  {%- endif -%}
 
   {%- if style == 'main' -%}
-    <a href="{{ _link }}" class="t4s-product-form__submit t4s-truncate is--btn-enquire t4s-btn t4s-btn-base t4s-btn-style-{{ bk_stts.button_style }} t4s-btn-color-{{ bk_stts.button_color }} t4s-w-100 t4s-justify-content-center{% if bk_stts.button_style == 'default' or bk_stts.button_style == 'outline' %} t4s-btn-effect-{{ bk_stts.button_effect }}{% endif %}">
+    <a href="{{ _link }}" target="_blank" rel="noopener" class="t4s-product-form__submit t4s-truncate is--btn-enquire t4s-btn t4s-btn-base t4s-btn-style-{{ bk_stts.button_style }} t4s-btn-color-{{ bk_stts.button_color }} t4s-w-100 t4s-justify-content-center{% if bk_stts.button_style == 'default' or bk_stts.button_style == 'outline' %} t4s-btn-effect-{{ bk_stts.button_effect }}{% endif %}">
       {%- if bk_stts.btn_icon -%}<svg class="t4s-btn-icon" viewBox="0 0 24 24"><use xlink:href="#t4s-icon-atc"></use></svg>{%- endif -%}
       <span class="t4s-btn-atc_text">{{ _label }}</span>
     </a>
 
   {%- elsif style == 'sticky' -%}
-    <a href="{{ _link }}" class="t4s-sticky-atc__atc is--btn-enquire">
+    <a href="{{ _link }}" target="_blank" rel="noopener" class="t4s-sticky-atc__atc is--btn-enquire">
       <span class="t4s-btn-atc_text">{{ _label }}</span>
     </a>
 
   {%- else -%}
-    <a href="{{ _link }}" class="t4s-pr-item-btn t4s-pr-addtocart is--btn-enquire" rel="nofollow">
+    <a href="{{ _link }}" target="_blank" rel="noopener nofollow" class="t4s-pr-item-btn t4s-pr-addtocart is--btn-enquire">
       <span class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-atc"></use></svg></span>
       <span class="t4s-text-pr">{{ _label }}</span>
     </a>
