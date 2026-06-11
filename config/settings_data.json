@@ -428,6 +428,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "announcement_yKHcpK": {
+            "type": "announcement",
+            "settings": {
+              "link": "",
+              "content": "<p>Free Pan India shipping and extra 5% off on prepaid orders</p>",
+              "adding_border": false,
+              "countdown": "2023/12/26",
+              "txt_day": "days",
+              "dayx": 0
+            }
+          },
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
@@ -452,6 +463,7 @@
           }
         },
         "block_order": [
+          "announcement_yKHcpK",
           "announcement-bar-0",
           "announcement-bar-1"
         ],
